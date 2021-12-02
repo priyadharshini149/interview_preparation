@@ -9,8 +9,8 @@ class Solution(object):
             if(i.isalnum()):
                 st+=i
         st1=st.lower();
-        s1=""
+        str=""
         for i in st1:
-            s1=i+s1
-        return st1==s1
+            str=i+str
+        return st1==str
         
