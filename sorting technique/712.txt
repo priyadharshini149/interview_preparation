@@ -1,0 +1,31 @@
+ a={}
+    if len(b)==1:
+        if b=='_':
+            return "YES"
+    for i in b:
+        if(i in a):
+            a[i]+=1
+        else:
+            a[i]=1
+    if '_' not in a :
+        a['_']=0
+        for i in b:
+            if(i==(i+1)):
+                flag=0
+            else:
+                flag=1  
+       
+            
+    flag=1              
+    for i in a:
+       if i.isalpha:
+           if a[i]==1:
+            
+            break
+           else:
+            flag=0
+    if(flag==0 and a['_']>=1):
+        return "YES"
+  
+    else:
+        return "NO"
